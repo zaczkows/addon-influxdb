@@ -56,7 +56,7 @@ ARG BUILD_DATE="Tue Nov 12 20:36:17 CET 2024"
 ARG BUILD_DESCRIPTION="TODO"
 ARG BUILD_NAME="influxdbvs2"
 ARG BUILD_REF="ha"
-ARG BUILD_REPOSITORY="https://github.com/zaczkows/addon-influxdb"
+ARG BUILD_REPOSITORY="zaczkows/addon-influxdb"
 ARG BUILD_VERSION="42"
 
 # Labels

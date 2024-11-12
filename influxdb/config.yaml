@@ -45,7 +45,7 @@ options:
   - name: INFLUXDB_COLLECTD_DATABASE
     value: collectd
   - name: INFLUXDB_COLLECTD_TYPESDB
-    value: /usr/local/share/collectd
+    value: /usr/share/collectd
 schema:
   log_level: list(trace|debug|info|notice|warning|error|fatal)?
   auth: bool
