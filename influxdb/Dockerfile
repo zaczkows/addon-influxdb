@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/debian-base/amd64:7.5.2
+ARG BUILD_FROM=ghcr.io/hassio-addons/debian-base/aarch64:7.5.2
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -6,7 +6,7 @@ FROM ${BUILD_FROM}
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Setup base system
-ARG BUILD_ARCH=amd64
+ARG BUILD_ARCH=aarch64
 ARG INFLUXDB_VERSION="1.8.10"
 ARG CHRONOGRAF_VERSION="1.10.2"
 ARG KAPACITOR_VERSION="1.5.9-1"
@@ -51,13 +51,13 @@ RUN \
 COPY rootfs /
 
 # Build arguments
-ARG BUILD_ARCH
-ARG BUILD_DATE
-ARG BUILD_DESCRIPTION
-ARG BUILD_NAME
-ARG BUILD_REF
-ARG BUILD_REPOSITORY
-ARG BUILD_VERSION
+ARG BUILD_ARCH=aarch64
+ARG BUILD_DATE="Tue Nov 12 20:36:17 CET 2024"
+ARG BUILD_DESCRIPTION="TODO"
+ARG BUILD_NAME="influxdbvs2"
+ARG BUILD_REF="ha"
+ARG BUILD_REPOSITORY="https://github.com/zaczkows/addon-influxdb"
+ARG BUILD_VERSION="42"
 
 # Labels
 LABEL \
